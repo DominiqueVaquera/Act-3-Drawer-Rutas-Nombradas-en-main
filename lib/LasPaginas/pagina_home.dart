@@ -11,17 +11,17 @@ class PaginaHome extends StatelessWidget {
         title: const Text('Inicio Zoológico'),
       ),
       drawer: const MenuLateral(), // Asignamos el Drawer personalizado
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.pets, size: 100, color: Colors.grey),
-            SizedBox(height: 20),
-            Text(
+            Icon(Icons.pets, size: 100, color: Theme.of(context).primaryColor),
+            const SizedBox(height: 20),
+            const Text(
               'Bienvenido al Sistema del Zoológico',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            Text('Selecciona una opción del menú lateral.'),
+            const Text('Selecciona una opción del menú lateral.'),
           ],
         ),
       ),
