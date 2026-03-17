@@ -23,7 +23,7 @@ class MenuLateral extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 // Avatar del negocio (Imagen desde red)
-                CircleAvatar(
+                const CircleAvatar(
                   radius: 30,
                   backgroundImage: NetworkImage('https://raw.githubusercontent.com/DominiqueVaquera/Imagenes/refs/heads/main/j.jfif'),
                 ),
@@ -41,7 +41,7 @@ class MenuLateral extends StatelessWidget {
                 const Text(
                   'Av. Avena | 6567863680 | zoologico@gmail.com',
                   style: TextStyle(
-                    color: Colors.white70,
+                    color: Colors.white,
                     fontSize: 12,
                   ),
                 ),
@@ -53,8 +53,6 @@ class MenuLateral extends StatelessWidget {
           _crearItem(context, Icons.people, 'Visitantes', '/visitantes'),
           _crearItem(context, Icons.badge, 'Empleados', '/empleados'),
           _crearItem(context, Icons.pets, 'Animales', '/animales'),
-          const Divider(), // Una línea divisoria, como en el diseño de image_1.png
-          _crearItem(context, Icons.settings, 'Configuración', null), // Ejemplo de otra opción
         ],
       ),
     );
