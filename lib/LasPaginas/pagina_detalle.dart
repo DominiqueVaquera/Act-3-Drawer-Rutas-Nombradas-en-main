@@ -4,8 +4,9 @@ import 'menu_lateral.dart'; // Importamos el Drawer
 class PaginaDetalle extends StatelessWidget {
   final String titulo;
   final String urlImagen;
+  final String texto;
 
-  const PaginaDetalle({super.key, required this.titulo, required this.urlImagen});
+  const PaginaDetalle({super.key, required this.titulo, required this.urlImagen, required this.texto});
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +31,8 @@ class PaginaDetalle extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Text(
-              'Sección: $titulo',
-              style: const TextStyle(fontSize: 16, fontStyle: FontStyle.italic),
+              texto,
+              style: const TextStyle(fontSize: 16),
             ),
           ],
         ),
