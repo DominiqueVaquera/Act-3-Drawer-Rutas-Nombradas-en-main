@@ -29,15 +29,18 @@ class MyAppZoo extends StatelessWidget {
         '/': (context) => const PaginaHome(),
         '/visitantes': (context) => const PaginaDetalle(
               titulo: 'Visitantes',
-              urlImagen: 'https://raw.githubusercontent.com/DominiqueVaquera/Imagenes/refs/heads/main/v.png', // URL de ejemplo para visitantes
+              urlImagen: 'https://raw.githubusercontent.com/DominiqueVaquera/Imagenes/refs/heads/main/v.jpg',
+              texto: 'Visitante: Fernanda Martinez',
             ),
         '/empleados': (context) => const PaginaDetalle(
               titulo: 'Empleados',
-              urlImagen: 'https://raw.githubusercontent.com/DominiqueVaquera/Imagenes/refs/heads/main/e.png', // URL de ejemplo para empleados
+              urlImagen: 'https://raw.githubusercontent.com/DominiqueVaquera/Imagenes/refs/heads/main/c2.jfif',
+              texto: 'Empleada: Miranda Fernandez',
             ),
         '/animales': (context) => const PaginaDetalle(
               titulo: 'Nuestros Animales',
-              urlImagen: 'https://raw.githubusercontent.com/DominiqueVaquera/Imagenes/refs/heads/main/a.png', // URL de ejemplo para animales
+              urlImagen: 'https://raw.githubusercontent.com/DominiqueVaquera/Imagenes/refs/heads/main/elefante.webp',
+              texto: 'elefante',
             ),
       },
     );
